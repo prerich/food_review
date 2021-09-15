@@ -1,0 +1,116 @@
+
+/* Setting color of the page and how i want to format the text*/
+body{
+	background-color:#a190d1;
+	color:#fff;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size:16px;
+	line-height:1.3em;
+} 
+
+/* for the grid look I wanted to use 98% of the width
+   that i have inside its div, but use full height
+   I also added a round border to match the border outside the grid*/
+img{
+    width: 98%;
+	height: 100%;
+	border-radius: 5%;
+}
+
+/* I want my header to be center and spaced well with a lot of space
+	in padding, and using letter spacing to stand out*/
+header{
+	/*font-family:Verdana, Geneva, Tahoma, sans-serif; */
+	margin: auto;
+    padding: 3%;
+    padding-bottom: 5px;
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-color: #fff;
+	letter-spacing: .5em;
+
+}
+/* I wanted the title of my page to stand out the most 
+   so it has the most spacing */
+ h1 {
+	letter-spacing: 1.2em;
+}
+
+
+/* The rest name should be emphasis, so it's centered
+  in the middle and has a diiferent color */
+h2 {
+	text-align: center;
+	color: #fa7dfa;
+	font-size: 30px;
+	padding: 10px;
+
+}
+
+a:link{
+	text-decoration: underline;
+	color:#fa7dfa;
+}
+
+
+a:visited{
+	color:#fa7dfa;
+}
+
+
+/*add a color when its hovered to make it stand out as a link this
+  is the only state of a link that I want to style */
+a:hover{
+	color:#a0bdfc;
+
+}
+
+
+/*each review has its own box look I wanted it to be centered
+  and take up half of the screen */
+.review-box{
+	border: 2px solid white;
+	border-radius: 10%;
+	width: 50%;
+	margin: auto;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	padding: 30px;
+	
+}
+
+
+/* Add a border for my table for readibilty*/
+.review-box table,th, td{
+
+	border: 1px solid #fff;
+
+}
+
+/*  To Match spacing from paragraph next to it I added margin
+   space to the top and also got rid of double borders*/
+   /* source; https://www.w3schools.com/cssref/pr_border.asp */
+.review-box table{
+	border-collapse: collapse;
+	height: 70%;
+	width: max-content;
+	margin-top: 20px;
+}
+
+/* I wanted to the table to stand out a bit, so i added color to table headings*/
+.review-box th{
+	background-color: #fff;
+	color: #df5edf;
+}
+
+
+/* for the grid look I made it 2 colums and evenly sized
+	i also centered the items for equal spacing I used the CSS video from class to 
+	accomplish this*/
+	/* source: https://www.youtube.com/watch?v=jV8B24rSN5o&feature=youtu.be */
+.review-content{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+	
+}
