@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--
+File: index.html
+GUI Assignment: Creating Your First Web Page
+Jennifer Robles, Jennifer_Robles@student.uml.edu
+Copyright (c) 2021 by Jennifer Robles. All rights reserved. 
+Created: 9/12/2021
+Updated by WZ on July 7, 2021 at 9:23 AM
+-->
+
+<html lang= "en">
+<head>
+    <meta charset="utf-8">
+    <title>Jen's Favorite</title>
+    <link rel="stylesheet" type="text/css" href = "css/style.css">
+</head>
+
+<body>
+    <!--This is an intro of my page and states its purpose-->
+    <header id="main-header">
+        <h1>Jen's Favorites</h1>
+        <p>Here's some of my favorite places to eat! :)</p>
+    </header>
+
+    <!-- I created a .review-box to seperate each review
+         and style the review the same for each for a consistent look-->
+    <div class="review-box">
+        <h2> <!--My h2 is also a link that takes user to the restuarent's page-->
+            <a href="https://www.tsaocaatea.com/location.html">
+                Tsaocaa Malden
+            </a>
+        </h2>
+            <!--I wanted to practice and implent a grid look, since
+                each review is 2 pics, table, and paragraph
+                but I learned it keep including the h2 so I seperated title
+                from content by creating .review-content-->
+            <div class="review-content">
+                <!--image is outside the place-->
+                <div><img src="img/tsa.jpg" alt="tsaocaa malden locatio"></div>
+
+                <!--image is interior of the place-->
+                <div><img src = "img/ts_interior.jpg" alt="inside tsaocaa"></div>
+                
+                <!--table to rate restaurent-->
+                <div><table>
+                    <tr>
+                        <th>Category</th>
+                        <th>Score</th>
+                    </tr>
+                    <tr>
+                        <td>Food</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Interior</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Prices/Affordability</td>
+                        <td>6</td>
+                    </tr>
+                </table></div>
+                
+                <!--my short review of the place-->
+                <div><p> Tsaocaa is a boba shop. I have only been to the Tsaocaa location in Malden
+                    ,but I love the fruit teas there and the Oreo Brown Sugar drink. They
+                    sell delicous fried chicken. Although, it takes a while for the fried chicken,
+                    it is very worth the wait because they make it fresh. The interior inside is 
+                    adorable. It is a perfect hangout spot. My only complaint is the Prices
+                    are high and due to covid it went higher, but the quality makes it worth it at times.
+                </p></div>
+            </div> <!--end of .review-content-->
+    </div><!---end of .review-box-->
+
+
+    <div class="review-box">
+    <h2>
+        <a href="https://www.nypizzamalden.com/?utm_source=organic_bing&utm_medium=bing_pw">
+            New York's Pizza Malden
+        </a>
+    </h2>
+        <!--for grid look purposes I made each compenent of review a divd
+            and made it all inside .review-content-->
+        <div class="review-content">
+            <!--look of the place from outside-->
+            <div><img src = "img/ny_pizza.jpg" alt ="New York's Pizza"></div>
+
+            <!--a picture of the inside of the restuarent-->
+            <div><img src = "img/ny_pizza_interior.jpg" alt = " NY Pizza interior"></div>
+
+            <!--table to rate restaurent-->
+            <div><table>
+                <tr>
+                    <th>Category</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <td>Food</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Interior</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Prices/Affordability</td>
+                    <td>9</td>
+                </tr>
+            </table></div>
+            <!--my short review-->
+            <div><p>New York Pizza is an Italian Pizza place. The subs
+                and Zita alfredo is to die for. They add alot of alfredo sauce to the dish.
+                Also, the prices are pretty good. I love going here when I want to eat
+                good quality food, but not break the bank. I dont eat inside because there is
+                AC and the kitchen is next the seating, so it gets very hot. The tables are very
+                close together and the lighting is awful. Most of the time I do to go order.
+            </p></div> 
+        </div><!--End of .review-content-->
+    </div><!---end of review-box-->
+
+    <div class="review-box">
+    <h2>
+        <a href="http://www.texmex.express/">
+            Tex-Mex BBQ & Tequeria
+        </a>
+    </h2>
+
+        <div class="review-content">
+            <!-- image of the food truck-->
+            <div><img src="img/tex_mex_truck.jfif" alt="tex-mex food truck"></div>
+
+            <!--image of my food-->
+            <div><img src="img/tacos.jpg" alt="tacos de pastor"></div>
+
+            <!--table to rate restaurent-->
+            <div><table>
+                <tr>
+                    <th>Category</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <td>Food</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Interior</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Prices/Affordability</td>
+                    <td>7</td>
+                </tr>
+            </table></div>
+            
+            <!-- my short review-->
+            <div><p>I would honestly recommend every item in the menu here. I love
+                    the tacos and tortas espically. I always order the Tacos de Pastor.
+                    Since, it is a food truck, they make the food right when you order,
+                    so its always warm and fresh. The workers are all latinos and make it
+                    very authentic food. My only complaint is some plates portions are smaller
+                    than I would like and the prices are pretty high. However, a lot of tacos places
+                    food places have gone higher due to the price of meat going up.
+            </p></div>
+        </div> <!--end of .review-content-->
+    </div><!--end of .review-box-->
+
+
+    <!--copyright purposes-->
+    <footer>
+        <p>Copyright &copy;2021 Jen's Favorites</p>
+    </footer>
+
+</body>
+</html>
